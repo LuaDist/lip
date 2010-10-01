@@ -1,0 +1,13 @@
+--- This file is part of LuaDist project
+
+name = "lip"
+version = "0.1"
+
+desc = "Lip is a Lisp like mini language written in Lua."
+license = "GPL"
+url = "http://luaforge.net/projects/lip/"
+maintainer = "Peter Kapec"
+
+depends = {
+	"lua ~> 5.1"
+}
