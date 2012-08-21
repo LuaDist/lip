@@ -7,6 +7,7 @@ desc = "Lip is a Lisp like mini language written in Lua."
 license = "GPL"
 url = "http://luaforge.net/projects/lip/"
 maintainer = "Peter Kapec"
+author = "hanzhao"
 
 depends = {
 	"lua ~> 5.1"
