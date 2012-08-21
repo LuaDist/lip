@@ -1,14 +1,15 @@
-# Copyright (C) 2007-2009 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(lip NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( lip NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
 # Install all files and documentation
-INSTALL (FILES lip.lua DESTINATION ${INSTALL_LMOD})
-INSTALL (FILES test_lip.lua DESTINATION ${INSTALL_TEST})
-INSTALL (FILES readme.txt DESTINATION ${INSTALL_DATA})
+install_lua_module ( lip lip.lua )
+install_test ( test_lip.lua )
+install_data ( readme.txt )
