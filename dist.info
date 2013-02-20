@@ -1,0 +1,28 @@
+type = "x86"
+arch = "Windows"
+author = "hanzhao"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "Lip is a Lisp like mini language written in Lua."
+version = "0.1"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib\lua\lip.lua]],
+}
+,
+Data = {
+[[share\lip\readme.txt]],
+}
+,
+Test = {
+[[share\lip\test\test_lip.lua]],
+}
+,
+}
+
+license = "GPL"
+name = "lip"
+url = "http://luaforge.net/projects/lip/"
